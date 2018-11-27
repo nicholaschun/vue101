@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Learning Vuejs- databinding</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <form>
+        <!-- for input fields -->
+        <input type="text" v-model="name">
+        <p>My name is : {{name}}</p>
+
+        <!-- for checkboxes -->
+        <input type="checkbox" v-model="checked" value="">
+        <label for="checkbox">{{checked}}</label>
+
+        <br>
+        <br>
+        <!-- for select options -->
+        <select v-model="age" name="">
+          <option value="">--Select your age --</option>
+          <option value="21">21</option>
+          <option value="25">25</option>
+        </select>
+        <p>Your age is: {{age}}</p>
+      </form>
+    </div>
+    <script type="text/javascript" src="assets/js/formBinding.js"></script>
+  </body>
+</html>

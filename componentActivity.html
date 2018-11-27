@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"
+  <head>
+    <meta charset="utf-8">
+    <title>Learning Vuejs- components</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <button type="button" @click="callRegister" name="button">Register User</button>
+      <button type="button" @click="callLogin" name="button">Login User</button>
+
+      <login v-if="login"></login>
+      <br>
+      <register v-if="register"></register>
+    </div>
+    <script type="text/javascript" src="assets/js/activityComponent.js"></script>
+  </body>
+</html>

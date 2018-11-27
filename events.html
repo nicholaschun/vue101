@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Learning Vuejs</title>
+    <script type="text/javascript" src="assets/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Events Handling</h1>
+      <h2>Age: {{ age }}</h2>
+
+    <!-- click events -->
+    <button type="button" @click="addYear">Add a year</button>
+    <button type="button" @click="substractYear" >Subract a year</button>
+
+    <!-- double click events with params -->
+    <button type="button" @dblclick="add10Years(10)">Add a year</button>
+    <button type="button" @dblclick="substract10Years(10)" >Subract a year</button>
+    <br>
+    <br>
+    <!-- onchange events -->
+    <select @change="selectVal">
+      <option value="Good morning">Good morning</option>
+      <option value="Good evening">Good Evening</option>
+    </select>
+
+    </div>
+    <script type="text/javascript" src="assets/js/events.js"></script>
+  </body>
+</html>

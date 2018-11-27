@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Learning Vuejs- databinding</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- bind href to vuelink incase vuelink is dynamic -->
+      <a :href="vuelink">Visit vue docs</a>
+
+      <!-- apply class 'colorRed' if isErrored is true -->
+      <h4 :class="{error: isErrored}">Change class based on data</h4>
+
+      <!-- binding input fields if there is an error -->
+      <input :class="{error: isErrored}" type="text" name="username" value="">
+    </div>
+    <script type="text/javascript" src="assets/js/databinding.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Learning Vuejs- databinding</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="todo in todos">{{todo}}</li>
+      </ul>
+
+      <!-- keep note of the index of the array -->
+      <ul>
+         <li v-for="(student, index) in students">
+          {{index}}.{{student.name}} - {{student.age}}
+         </li>
+      </ul>
+
+      <ul>
+        <li v-for="(worker, index) in workers">{{index}}-{{worker}}</li>
+      </ul>
+
+      <!-- not knowing the name of the keys -->
+      <ul v-for="student in students">
+          <li v-for="(val,key) in student">{{key}} - {{val}}</li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="assets/js/listRendering.js"></script>
+  </body>
+</html>
